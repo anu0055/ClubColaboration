@@ -1,0 +1,20 @@
+{
+  "buildCommand": "echo 'Building full-stack app...' && cd client && npm install && npm run build",
+  "outputDirectory": "client/dist",
+  "framework": "vite",
+  "env": {
+    "VITE_API_URL": {
+      "description": "API URL for frontend (leave empty for relative URLs)"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

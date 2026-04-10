@@ -1,0 +1,6 @@
+node_modules/
+server/campus_club.db
+server/node_modules/
+client/node_modules/
+client/dist/
+*.docx
