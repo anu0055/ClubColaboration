@@ -1,5 +1,5 @@
 // Use environment variable for API URL, fallback to localhost for development
-const API = import.meta.env.VITE_API_URL 
+const API = (import.meta.env.VITE_API_URL || '').trim() 
   ? `${import.meta.env.VITE_API_URL}/api` 
   : 'http://localhost:5000/api';
 
