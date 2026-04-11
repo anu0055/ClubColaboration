@@ -4,4 +4,12 @@ server/node_modules/
 client/node_modules/
 client/dist/
 *.docx
+
+# Environment variables - never commit!
 .env
+.env.local
+.env.*.local
+server/.env
+server/.env.local
+client/.env
+client/.env.local
